@@ -140,7 +140,7 @@ html {
 
 /* Contact */
 
-form {
+/* form {
     margin: 0 0 2em 0;
 }
 
@@ -396,4 +396,4 @@ input[type="radio"] + label:before {
 :-ms-input-placeholder {
     color: rgba(244, 244, 255, 0.2) !important;
     opacity: 1.0;
-}
+} */
