@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import HomePage from './Components/HomePage';
-import './styles/App.css';
+import './styles/style.css'
 import Navbar from '../src/Components/Navbar'
 
-function App() {
+function App2() {
   return (
     <div className="App">
       <HomePage/>
@@ -11,4 +11,4 @@ function App() {
   );
 }
 
-export default App;
+export default App2;
