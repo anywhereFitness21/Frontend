@@ -2,6 +2,7 @@ import React from "react";
 import {Route, Link} from "react-router-dom";
 import LogIn from "./components/LogIn";
 import SignUp from "./components/SignUp";
+import HomePage from './components/HomePage';
 import './App.css'
 import styled from 'styled-components';
 
@@ -20,12 +21,10 @@ font-size:1.8em;
 
 const App = () => {
   return (
-    
+  
     <WrapperDiv>
       <div className='app-container'>
-
-      <h1>Anywhere Fitness</h1>
-      
+{/*       
       <NavDiv>
       <div id="con">
           <nav>
@@ -40,7 +39,8 @@ const App = () => {
               </ul>
           </nav>
           </div>
-          </NavDiv>
+          </NavDiv> */}
+          <HomePage />
       </div>
           <Route exact path="/SignUp">
             <SignUp />
@@ -51,6 +51,7 @@ const App = () => {
           </Route>
 
     </WrapperDiv>
+    
    
   );
 };
