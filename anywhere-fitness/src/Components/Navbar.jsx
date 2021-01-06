@@ -33,7 +33,7 @@ const Navbar = () => {
         <header id='hero'>
             <div onScroll={onScroll} className='navbar top'>
                 <div className='logo'>
-                        <h1 className='logo'><span className='logoSpan'><FontAwesomeIcon icon={faDumbbell} className='i'/>Anywhere</span> Fitness</h1>
+                        <h1 className='logo'><span className='logoSpan'><FontAwesomeIcon icon={faDumbbell} className='i'/>Anywhere</span> Fitness</h1> 
                     </div>
                     <nav>
                         <ul>
