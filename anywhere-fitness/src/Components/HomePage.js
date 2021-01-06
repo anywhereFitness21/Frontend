@@ -5,7 +5,7 @@ import { faChevronRight, faSearchLocation } from '@fortawesome/free-solid-svg-ic
 import { faCalendarCheck, faCreditCard } from '@fortawesome/free-regular-svg-icons'
 import Footer from './Footer';
 import '../styles/style.css';
-
+ 
 const HomePage = () => {
     return (
         <>
@@ -29,7 +29,7 @@ const HomePage = () => {
             </div>
 
             {/* Icons */}
-            <div className='features'>
+            <div className='features' >
                 <div className='icon bg-light'>
                     <FontAwesomeIcon icon={faCalendarCheck} className='ice'/>
                     <h2>On Your Schedule</h2>
