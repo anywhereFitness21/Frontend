@@ -1,25 +1,57 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {Route, Link} from "react-router-dom";
+import LogIn from "./components/LogIn";
+import SignUp from "./components/SignUp";
+import './App.css'
+import styled from 'styled-components';
 
-function App() {
+
+const WrapperDiv = styled.div`
+width:30%;
+margin:2% auto;
+background-color:White;
+box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 5px;
+
+`;
+
+const NavDiv = styled.div`
+font-size:1.8em;
+`;
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    
+    <WrapperDiv>
+      <div className='app-container'>
 
+      <h1>Anywhere Fitness</h1>
+      
+      <NavDiv>
+      <div id="con">
+          <nav>
+          <ul>
+              <Link to="/">Home</Link>
+              </ul>
+              <ul>
+              <Link to="/SignUp">Sign Up</Link>
+              </ul>
+              <ul>
+                <Link to="/LogIn">Log In</Link>
+              </ul>
+          </nav>
+          </div>
+          </NavDiv>
+      </div>
+          <Route exact path="/SignUp">
+            <SignUp />
+          </Route>
+
+          <Route exact path="/LogIn">
+            <LogIn />
+          </Route>
+
+    </WrapperDiv>
+   
+  );
+};
 export default App;
