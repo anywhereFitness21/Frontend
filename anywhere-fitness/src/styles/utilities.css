@@ -153,4 +153,7 @@
     padding: 40px 0;
 }
 
-
+.actions button{
+   margin-left: 5%;
+   margin-top: 5%;
+}

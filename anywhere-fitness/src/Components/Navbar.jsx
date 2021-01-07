@@ -1,4 +1,6 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom';
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { faDumbbell } from '@fortawesome/free-solid-svg-icons'
@@ -7,6 +9,8 @@ import '../styles/utilities.css'
 
 
 const Navbar = () => {
+
+    const { push } = useHistory();
 
     const onScroll = (e) => {
 
@@ -30,18 +34,19 @@ const Navbar = () => {
     }
 
     return (
+
         <header id='hero'>
             <div onScroll={onScroll} className='navbar top'>
                 <div className='logo'>
-                        <h1 className='logo'><span className='logoSpan'><FontAwesomeIcon icon={faDumbbell} className='i'/>Anywhere</span> Fitness</h1>
+                        <h1 className='logo'><span className='logoSpan'><FontAwesomeIcon icon={faDumbbell} className='i'/>Anywhere</span> Fitness</h1> 
                     </div>
                     <nav>
                         <ul>
-                            <li><a href="#">Home</a></li>
+                            <li><a>Home</a></li>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Blog</a></li>
-                            <li><a href="#">Login</a></li> 
-                            <li><a href="#">Sign Up</a></li>
+                            <li><a onClick={ () => push('/login') } >Login</a></li> 
+                            <li><a onClick={ () => push('/SignUp') }>Sign Up</a></li>
                         </ul>
                     </nav>
             </div>
@@ -50,8 +55,8 @@ const Navbar = () => {
                 <p>HOST OR ATTEND FITNESS CLASSES FROM ANYWHERE</p>
                 <a href='' className='btn-primary'><FontAwesomeIcon icon={faChevronRight} className='i'/>Read More</a>
             </div>
-            
         </header>
+
     )
 }
 
