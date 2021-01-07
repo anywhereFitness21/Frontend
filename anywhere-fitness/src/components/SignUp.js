@@ -101,7 +101,7 @@ export default function Signup () {
                 value='Instructor'
                 checked={signup.usertype === 'Instructor'}
                 onChange={inputChange}
-                /> Instructor
+                /> Instructors
             
                 <input
                 id = "usertype" 
