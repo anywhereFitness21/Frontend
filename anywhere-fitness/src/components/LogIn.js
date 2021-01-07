@@ -5,7 +5,7 @@ import { axiosWithAuth } from '../utils/axiosWithAuth'
 import { useHistory } from 'react-router-dom'
 
 
-export default function Login () {
+const Login = () => {
 
   const [ login, setLogin ] = useState({
       username : "",
@@ -109,3 +109,5 @@ export default function Login () {
       </form>
   );
 };
+
+export default Login;

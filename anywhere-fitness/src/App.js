@@ -9,36 +9,11 @@ import styled from 'styled-components';
 
 const App = () => {
   return (
+    
   <Router>
-    <div>
-      <div className='app-container'>
-{/*       
-      <NavDiv>
-      <div id="con">
-          <nav>
-          <ul>
-              <Link to="/">Home</Link>
-              </ul>
-              <ul>
-              <Link to="/SignUp">Sign Up</Link>
-              </ul>
-              <ul>
-                <Link to="/LogIn">Log In</Link>
-              </ul>
-          </nav>
-          </div>
-          </NavDiv> */}
-          <HomePage />
-      </div>
-          <Route exact path="/SignUp">
-            <SignUp />
-          </Route>
-
-          <Route exact path="/LogIn">
-            <LogIn />
-          </Route>
-
-    </div>
+        <Route exact path='/' component={HomePage}/>
+          <Route exact path="/SignUp" component={SignUp}/>
+          <Route exact path="/LogIn" component={LogIn}/>
     </Router>
    
   );
