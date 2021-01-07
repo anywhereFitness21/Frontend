@@ -167,6 +167,7 @@ html {
     padding: 20px 0;
     padding-bottom: 40px;
 }
+
 /* Contact */
 
 #contact .inner{
@@ -215,8 +216,25 @@ html {
     width: 100%;
 }
 
-
 .half {
     display: inline-block;
 }
 
+#footer {
+    border: 2px solid #363A59;
+}
+
+.footer-inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-icons {
+    list-style: none;
+    display: flex;
+}
+
+.footer-icons a {
+    color: #fff;
+    text-decoration: none;
+}
