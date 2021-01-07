@@ -63,10 +63,13 @@ const HomePage = () => {
                  </div>
                 </div>
             </div>
-            <div className='Testimonials bg-secondary'>
+            <div className='Testimonials'>
+                <div className='innerT'>
                 <h2>Read Our Testimonials</h2>
                 <p>lorem aisjd asdwe aksfen ajsdnwei wjs fijwefw ejdnwiuebfsj dwienrwein dkas iqjwndojqsn diwje fiqew doiuwehjas dwe fiuqowjd wdvi3uenfojw diuqnqwrounqefb aiusbfqj dwe f</p>
-                <a href='#' className='btn-primary'><FontAwesomeIcon icon={faChevronRight} className='i'/>Testimonials</a>
+                <a href='#' className='btn-primary it'><FontAwesomeIcon icon={faChevronRight} className='it'/>Testimonials</a>
+                </div>
+                
             </div>
             <Footer/>
         </>
