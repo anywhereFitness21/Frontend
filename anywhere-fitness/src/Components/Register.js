@@ -4,6 +4,7 @@ import * as yup from 'yup'
 import { axiosWithAuth } from '../utils/axiosWithAuth'
 import { useHistory } from 'react-router-dom'
 import styled from 'styled-components';
+import '../styles/Login.css'
 
 const WrapperDiv = styled.div`
 color:red;
@@ -92,7 +93,7 @@ export default function Signup () {
       return (
         <form className='form-container' onSubmit={formSubmit}>
             <div className='choices'>
-            
+            <h1>Sign Up</h1>
             <label htmlFor="usertype">
                 <input 
                 id = "usertype"

@@ -3,7 +3,7 @@ import * as yup from 'yup'
 import  formSchema  from '../validation/formSchema'
 import { axiosWithAuth } from '../utils/axiosWithAuth'
 import { useHistory } from 'react-router-dom'
-
+import '../styles/Login.css'
 
 const Login = () => {
 
@@ -78,7 +78,7 @@ const Login = () => {
 
   return (
       <form className='form-container' onSubmit={formSubmit}>
-
+          <h1>Log In</h1>
           <label htmlFor="username">
               <input
               id="username"
