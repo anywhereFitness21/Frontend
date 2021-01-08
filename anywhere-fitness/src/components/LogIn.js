@@ -4,7 +4,7 @@ import  formSchema  from '../validation/formSchema'
 import { axiosWithAuth } from '../utils/axiosWithAuth'
 import { useHistory } from 'react-router-dom'
 import '../styles/Login.css'
-
+import axios from 'axios'
 const Login = () => {
 
   const [ login, setLogin ] = useState({
@@ -31,8 +31,18 @@ const Login = () => {
           });
       });
   };
-
+  useEffect(()=>{
+    axios.get('')
+      .then((res)=>{
+        setLogin(res.data.results)
+      })
+      .catch(err => {
+        console.log('ERROR')
+      })
+  },[])
   const history = useHistory();
+
+ 
 
   const postUser = (thisUser) => {
     axiosWithAuth()

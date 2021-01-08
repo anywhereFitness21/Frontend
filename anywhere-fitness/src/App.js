@@ -1,8 +1,8 @@
 import React from "react";
 import {BrowserRouter as Router, Route} from "react-router-dom";
-import LogIn from "./components/LogIn";
-import SignUp from "./components/SignUp";
-import HomePage from './components/HomePage';
+import LogIn from "./Components/LogIn";
+import SignUp from "./Components/Register";
+import HomePage from './Components/HomePage';
 import './App.css'
 import styled from 'styled-components';
 

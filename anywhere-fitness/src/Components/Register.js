@@ -5,7 +5,7 @@ import { axiosWithAuth } from '../utils/axiosWithAuth'
 import { useHistory } from 'react-router-dom'
 import styled from 'styled-components';
 import '../styles/Login.css'
-
+import axios from 'axios'
 const WrapperDiv = styled.div`
 color:red;
 `;
@@ -43,6 +43,18 @@ export default function Signup () {
     };
 
     const history = useHistory();
+
+    useEffect(()=>{
+        axios.get('')
+          .then((res)=>{
+            setSignup(res.data.results)
+          })
+          .catch(err => {
+            console.log('ERROR')
+          })
+      },[])
+
+
 
     const postUser = (thisUser) => {
         axiosWithAuth()
