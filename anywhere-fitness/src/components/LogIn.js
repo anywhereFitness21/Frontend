@@ -32,7 +32,7 @@ const Login = () => {
       });
   };
   useEffect(()=>{
-    axios.get('')
+    axios.get('/api/users')
       .then((res)=>{
         setLogin(res.data.results)
       })
@@ -46,7 +46,7 @@ const Login = () => {
 
   const postUser = (thisUser) => {
     axiosWithAuth()
-    .post('/login', thisUser)
+    .post('/api/auth/login', thisUser)
     .then((res) => {
         console.log(res)
         localStorage.setItem('token', res.data.token)

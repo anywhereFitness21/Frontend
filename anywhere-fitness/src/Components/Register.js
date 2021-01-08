@@ -45,7 +45,7 @@ export default function Signup () {
     const history = useHistory();
 
     useEffect(()=>{
-        axios.get('')
+        axios.get('/api/users')
           .then((res)=>{
             setSignup(res.data.results)
           })
@@ -58,7 +58,7 @@ export default function Signup () {
 
     const postUser = (thisUser) => {
         axiosWithAuth()
-        .post('/signup', thisUser)
+        .post('/api/auth/register', thisUser)
         .then((res) => {
             console.log(res)
             localStorage.setItem('token', res.data.token)
